@@ -1,7 +1,6 @@
 import  random as a
 from random import randint
 
-randint
 vector_1 = []
 vector_2 = []
 vector_3 = []
