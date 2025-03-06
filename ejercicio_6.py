@@ -42,5 +42,10 @@ for asignatura in range (cantidadasignaturas):
 media_clase = total_clase / (cantidadasignaturas* cantidadalumnos)
 print(f"Nota media de la clase: {media_clase: .2f}")
 
+def mostrar(notitas):
+    for notas in notitas:
+        print(notas)
+mostrar(notitas)
+
 
 
