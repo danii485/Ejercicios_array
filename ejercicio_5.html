@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Adivina el número aleatorio entre 1 y 100</h2>
+    <input type="number" id="aleatorios">
+    <button onclick="aleatorio()">Inserta un numero</button>
+    <p id="resultado"></p>
+    <script>
+        function aleatorio(){
+        var numero = parseInt(document.getElementById("resultado".value));
+        var contador = 0;
+        var num =Math.random() * 100;
+        var aleatorioo = Math.floor(num)
+        var final = aleatorioo + 1
+        if (numero == final ){
+            document.getElementById("resultado").innerHTML = "Lo conseguiste"
+        }
+        else if(numero > final){
+                document.getElementById("resultado").innerHTML = "El número es demasiado bajo"
+            }
+            else{
+                document.getElementById("resultado").innerHTML = "El número es demasiado alto"
+            }
+
+        }
+    </script>
+</body>
+</html>

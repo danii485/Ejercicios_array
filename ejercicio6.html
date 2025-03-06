@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="numeropositivo()">Numeros positivos</button>
+    <p id="resultado"></p>
+    <script>
+        num = 0
+        function numeropositivo(){
+            var numero = parseInt(document.getElementById("resultado").value);
+            for(var i = 0; i <11; i++){
+                let result = numero * i
+                document.getElementById("resultado").innerHTML = "El numero " + i + "esta multiplicado por " + result;
+            }
+        }
+        
+    </script>
+</body>
+</html>

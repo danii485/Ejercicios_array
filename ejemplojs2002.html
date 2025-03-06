@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bucle For en JavaScript dentro de HTML</title>
+</head>
+<body>
+    <p id="output"></p>
+    <button onclick="imprimirNumeros()">Imprimir Números</button>
+    <script>
+        // Función para imprimir los números del 1 al 5 en un elemento HTML
+        function imprimirNumeros() {
+
+        // Obtener el elemento donde queremos imprimir los números
+        var outputElement = document.getElementById("output");
+        var outputContent = "";
+
+        var outputContent = "";
+        // Bucle for que genera los números del 1 al 5
+        for (var i = 1; i <= 5; i++) {
+        // Concatenar el número actual al contenido
+        outputContent += i + " ";
+        }
+        // Actualizar el contenido del elemento con los números generados
+        outputElement.textContent = outputContent;
+        //outputElement.getElementById("output").innerHTML = outputContent;
+        }
+    </script>
+</body>
+</html>
